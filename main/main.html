@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyPro Chat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="header">
+    <div class="container-fluid">
+        <div class="row d_flex">
+            <div class=" col-md-2 col-sm-3 col logo_section">
+                <div class="full">
+                    <div class="center-desk">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../auth/login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="signout-button" onclick="signOut()">Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<main>
+    <section id="chat-section">
+        <div id="chat-messages">
+            <div>Hello! I am the StudyPro AI tutor. How may I help you?</div>
+        </div>
+
+        <div id="text-input">
+            <div class="input-container">
+                <textarea id="user-message" placeholder="Type your question or topic here"></textarea>
+                <button id="send-button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="input-section">
+        <textarea id="user-input" placeholder="Type your question or input here"></textarea>
+        <button id="input-button" onclick="submitInput()">Submit</button>
+    </section>
+
+    <section id="current-topic">
+        <strong>Current Question/Topic:</strong> <span id="current-question"></span>
+    </section>
+</main>
+
+<footer>
+    <button id="back-button" onclick="goBack()">Back to Sessions</button>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
