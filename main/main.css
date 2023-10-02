@@ -1,0 +1,153 @@
+body, h1, button, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f7f9;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#chat-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+#input-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#send-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send-button:hover {
+    background-color: #2587c3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#back-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#back-button:hover {
+    background-color: #c0392b;
+}
+
+#chat-section {
+    height: 300px;
+    overflow-y: auto;
+}
+
+.navbar-form input {
+    border: none !important;
+}
+
+.navigation.navbar {
+    margin-top: 10px;
+    float: right;
+    padding: 0;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 15px 30px;
+    color: #000000;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+    background: #f0390f;
+}
+
+.navigation.navbar-dark .navbar-nav .active>.nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar.dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show>.nav-link {
+    color: #fff;
+    background: #f0390f;
+}
+textarea {
+    width: 300px;
+    height: 50px;
+    resize: none;
+}
+
+#user-input {
+    width: 600px;
+    height: 300px;
+    resize: none;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#user-message {
+    padding-right: 20px;
+}
+
+#send-button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
