@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyPro Sign Up</title>
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="auth.css">
+</head>
+<div class="pen-title">
+    <h1>StudyPro Login/Sign In</h1>
+</div>
+<div class="container">
+    <div class="card"></div>
+    <div class="card">
+        <h1 class="title">Login</h1>
+            <div class="input-container">
+                <input type="text" id="loginUsername" required="required"/>
+                <label for="loginUsername">Username</label>
+                <div class="bar"></div>
+            </div>
+            <div class="input-container">
+                <input type="password" id="loginPassword" required="required"/>
+                <label for="loginPassword">Password</label>
+                <div class="bar"></div>
+            </div>
+            <div class="button-container">
+                <button onclick="login()"><span>Login</span></button>
+            </div>
+    </div>
+    <div class="card alt">
+        <div class="toggle"></div>
+        <h1 class="title">Register
+            <div class="close"></div>
+        </h1>
+            <div class="input-container">
+                <input type="text" id="signupUsername" required="required"/>
+                <label for="signupUsername">Username</label>
+                <div class="bar"></div>
+            </div>
+            <div class="input-container">
+                <input type="password" id="signupPassword" required="required"/>
+                <label for="signupPassword">Password</label>
+                <div class="bar"></div>
+            </div>
+            <div class="button-container">
+                <button onclick="register()"><span>Register</span></button>
+            </div>
+    </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="auth.js"></script>
+</html>
