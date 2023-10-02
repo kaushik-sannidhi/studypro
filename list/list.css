@@ -1,0 +1,146 @@
+body, h2, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #d8ecdb, #6acdea);
+    height: 100vh;
+}
+
+.navbar {
+    margin-top: 5px;
+}
+
+#content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#form_container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px;
+}
+
+#form_header_container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#form_header {
+    font-family: 'Bowlby One SC', sans-serif;
+    font-size: 28px;
+}
+
+#form_content_inner_container {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#button_container {
+    text-align: center;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00ccff;
+}
+
+
+
+.delete-button {
+    background-color: #f0390f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #ff0000;
+}
+
+#sessionList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    border-top: none;
+}
+
+#sessionList li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: none;
+}
+
+#addSession {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#addSession button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    margin-top: 50px;
+    margin-left: 60px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addSession button:hover {
+    background-color: #00ccff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.session-button {
+    background-color: rgb(255, 0, 0, 0.1);
+    margin-right: 50px;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.session-button:hover {
+    background-color: #00ccff;
+}
